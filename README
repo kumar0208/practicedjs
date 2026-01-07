@@ -1,0 +1,19 @@
+// Date:05-01-2026
+// Topic: reuseability
+
+// reference files{
+// module1.js, -- exported the values using keyword "export" -- using named export
+// module1.html, -- imported that exported values and displayed in browser
+// module2.js, -- exported function using (default export)
+// module2.html,
+// module3.js, --exporting [array],{Object},
+// module3.html --importing and displaying the values in array and object
+// localStorage.html, -- even browser closed we can get the data -{5-10} can be stored in browser
+// sessionStorage.html -- if browser closed then the data is can not retrived -5MB can be stored in browser
+// }
+
+// - Topic: debounce
+// -
+// - reference files{
+// - debounce.js,
+// - debounce.html,}

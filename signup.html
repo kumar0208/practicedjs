@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <style>
+      table {
+        width: 500px;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td {
+        text-align: center;
+        padding: 10px;
+      }
+      table {
+        border: 2px solid rgb(72, 65, 65);
+        border-collapse: collapse;
+      }
+      td,
+      tr {
+        border: 2px solid rgb(72, 65, 65);
+      }
+      .btn {
+        background-color: black;
+        color: wheat;
+        border: 0;
+        width: auto;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Sign Up Here!...</h1>
+    <form action="success.html" onsubmit="return alidate()">
+      <table>
+        <tr>
+          <td><label> Enter Username: </label></td>
+          <td><input type="text" name="username" id="usernamee" /></td>
+        </tr>
+        <tr>
+          <td><label> Enter Password: </label></td>
+          <td><input type="password" name="password" id="pswd" /></td>
+        </tr>
+
+        <tr>
+          <td><label> confirm Password: </label></td>
+          <td><input type="password" name="cnfpassword" id="cpswd" /></td>
+        </tr>
+        <tr>
+          <td><label>Mobile Number:</label></td>
+          <td><input type="tel" id="phnno" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Enter Email:</label></td>
+          <td><input type="email" id="mailid" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Select Gender:</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" />Male
+            <input type="radio" id="female" name="gender" />Female
+          </td>
+        </tr>
+        <tr>
+          <td><label>Enter DOB:</label></td>
+          <td><input type="date" id="dobid" name="birthday" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Enter Adderess:</label></td>
+          <td>
+            <textarea id="address" rows="3" cols="30" placeholder=""></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Qualification:</label></td>
+          <td>
+            <select name="qualifications" id="qualifications">
+              <option value="">Select</option>
+              <option value="btech">BTECH</option>
+              <option value="mtech">MTECH</option>
+              <option value="10th">10th</option>
+              <option value="inter">INERMEDIATE</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>skills:</label></td>
+          <td>
+            <select name="skills" id="skills" multiple>
+              <option value="java">Java</option>
+              <option value="Python">Python</option>
+              <option value="c">c</option>
+              <option value="c++">C++</option>
+              <option value="c#">C#</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Preferred Shift:</label></td>
+          <td>
+            <input type="checkbox" name="box1" id="dayShift" />Day Shift
+            <input type="checkbox" name="box2" id="nightShift" />Night Shift
+          </td>
+        </tr>
+        <tr>
+          <td><label>Uplod Resume:</label></td>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <input class="btn" type="submit" value="Register" />
+            <input class="btn" type="reset" value="Resert" />
+          </th>
+        </tr>
+      </table>
+    </form>
+    <script src="signUpValid.js"></script>
+  </body>
+</html>
